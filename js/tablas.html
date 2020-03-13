@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#btn").click(function(){
+        var n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,r;
+        n1 = $("#a1").val();
+        n2 = $("#a2").val();
+        n3 = $("#a3").val();
+        n4 = $("#a4").val();
+        n5 = $("#a5").val();
+        n6 = $("#a6").val();
+        n7 = $("#a7").val();
+        n8 = $("#a8").val();
+        n9 = $("#a9").val();
+        n10 = $("#10a").val();
+        n11 = $("#a11").val();
+        n12 = $("#a12").val();
+        n13 = $("#a13").val();
+        n14 = $("#a14").val();
+        r = parseInt(n1) + parseInt(n2)+ parseInt(n3)+ parseInt(n4)+ parseInt(n5)+ parseInt(n6)+ parseInt(n7)+ parseInt(n8)+ parseInt(n9)+ parseInt(n10)+ parseInt(n11)+ parseInt(n12)+ parseInt(n13)+ parseInt(n14);
+        alert("La suma es: " + r);
+      });
+      $("#res").click(function(){
+        var n1,n2,r;
+        n1 = $("#num1").val();
+        n2 = $("#num2").val();
+        r = parseInt(n1) - parseInt(n2);
+        alert("La resta es: " + r);
+      });
+      $("#divv").click(function(){
+        var n1,n2,r;
+        n1 = $("#num1").val();
+        n2 = $("#num2").val();
+        r = parseInt(n1) / parseInt(n2);
+        alert("La divicion es: " + r);
+      });
+      $("#mult").click(function(){
+        var n1,n2,r;
+        n1 = $("#num1").val();
+        n2 = $("#num2").val();
+        r = parseInt(n1) * parseInt(n2);
+        alert("La multiplicacion es: " + r);
+      });
+    });
+
+  </script>
+</head>
+
+
+
+////////////////////////
+<body>
+  <br><br><br>
+  <center>
+  <table>
+    <tr><td>Dame un numero</td>
+      <td><input type="numeric" name="num1" id="num1"></td></tr>
+    <tr><td>Dame otro numero</td>
+      <td><input type="numeric" name="num2" id="num2"></td></tr>  
+   
+    <tr><td><center><input type="button" value="Divicion" id="divv"></center></td>
+      <td><center><input type="button" value="multiplicacion" id="mult"></center></td></tr>
+  </table></center>
+  <center><input type="reset" value="Borrar"></center>
+  ////////////////////////////////
+
+<table border=3>
+  <caption> Ejemplo de tabla </caption>
+  <thead>
+    <tr>
+      <th colspan=4> puntos de funcion sin ajustar </th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan =2> Descripcion</td>
+      <th colspan=4> complejidad</th>
+    </tr>
+    <tr>
+       <td>Alta</td>
+      <td>Media</td>
+      <td>Baja</td>
+    </tr>
+    <tr>
+      <td>Entradas ( EI )</td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+    </tr>
+     <tr>
+      <td>Salidas ( EO )</td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+    </tr>
+     <tr>
+      <td>Consultas ( EQ )</td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+    </tr>
+    <tr>
+      <td>Archivos ( ILF )</td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"> </td>
+    </tr>
+    <tr>
+      <td>Interfaces de Programa ( EIF )</td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+      <td><input type="numeric" name="num1" id="num1"></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=4>PFSA</th>
+      
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+<table border=3>
+  <caption>Ejemplo de tabla</caption>
+  <thead>
+    <tr>
+      <th colspan=4>Obtener los PF Ajustados (PF)</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan =  >N° de Factor</td>
+      <td rowspan =  >Factor de Ajuste</td>
+      <td rowspan =  >Valor 0….5</td>
+      
+    </tr>
+
+    <tr>
+      <td>( 1 )</td>
+      <td>Comunicación de Datos</td>
+      <td><input type="numeric" name="a1" id="a1"></td>
+      
+    </tr>
+     <tr>
+      <td>( 2 )</td>
+      <td>Proceso Distribuido</td>
+      <td><input type="numeric" name="a2" id="a2"></td>
+      <
+    </tr>
+     <tr>
+      <td>( 3 )</td>
+      <td>Objetivos de Rendimiento</td>
+      <td><input type="numeric" name="a3" id="a3"></td>
+      
+    </tr>
+    <tr>
+      <td>( 4 )</td>
+      <td>Configuracion de Explotacion Compartida</td>
+      <td><input type="numeric" name="a4" id="a4"></td>
+     
+    </tr>
+    <tr>
+      <td>( 5 )</td>
+      <td>Tasas de Transacciones</td>
+      <td><input type="numeric" name="a5" id="a5"></td>
+      
+    </tr>
+<tr>
+      <td>( 6 )</td>
+      <td>Entrada de Datos en Linea</td>
+      <td><input type="numeric" name="a6" id="a6"></td>
+      
+    </tr>
+<tr>
+      <td>( 7 )</td>
+      <td>Eficiencia con el usuario Final</td>
+      <td><input type="numeric" name="a7" id="a7"></td>
+      
+    </tr>
+<tr>
+      <td>( 8 )</td>
+      <td>Actualizaciones en Linea</td>
+      <td><input type="numeric" name="a8" id="a8"></td>
+      
+    </tr>
+<tr>
+      <td>( 9 )</td>
+      <td>Lógica de Proceso Interno Compleja</td>
+      <td><input type="numeric" name="a9" id="a9"></td>
+      
+    </tr>
+<tr>
+      <td>( 10 )</td>
+      <td>Reusabilidad de Codigo</td>
+      <td><input type="numeric" name="a10" id="a10"></td>
+      
+    </tr>
+<tr>
+      <td>( 11 )</td>
+      <td>Conversion de Instalacion Contempladas</td>
+      <td><input type="numeric" name="a11" id="a11"></td>
+      
+    </tr>
+<tr>
+      <td>( 12 )</td>
+      <td>Facilidad de Operación</td>
+      <td><input type="numeric" name="a12" id="a12"></td>
+      
+    </tr>
+<tr>
+      <td>( 13 )</td>
+      <td>Intalciones Multiples</td>
+      <td><input type="numeric" name="a13" id="a13"></td>
+      
+    </tr>
+<tr>
+      <td>( 14 )</td>
+      <td>Facilidad de Cambios</td>
+      <td><input type="numeric" name="14" id="a14"></td>
+      
+    </tr>
+
+<tr>
+    <th colspan=2>Ajuste de Complejidad Tecnica (ACT) (PF)</th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=2>Complejidad del Proceso Ajustada (ACTA)</th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=2>Total de Puntos de Fucion Ajustados (PFA)</th>
+    <td>( 14 )</td>
+    </tr>
+
+</table>
+
+
+<input type="button" value="Sumar" id="btn">
+
+<table border=3>
+  <caption>Ejemplo de tabla</caption>
+  <thead>
+    <tr>
+      <th colspan=4>Calculo de Esfuerzo</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan =2 >Descripcion</td>
+      <th colspan=4>Líneas de Codigo por Puntos de Funcion</th>
+    </tr>
+    <tr>
+       <td>Alta</td>
+      <td>Media</td>
+      <td>Baja</td>
+    </tr>
+    <tr>
+      <td>Entradas ( EI )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+     <tr>
+      <td>Salidas ( EO )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+     <tr>
+      <td>Consultas ( EQ )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+    <tr>
+      <td>Archivos ( ILF )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+    <tr>
+      <td>Interfaces de Programa ( EIF )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=4>TOTAL ESFUERZO</th>
+      
+    </tr>
+    </tr>
+<tr>
+    <th colspan=3>Lineas de Codigo</th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=3>Grupo de Trabajo (Nro Pernonas)</th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=3>Jurnada Productiva </th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=3>Dias Laborables</th>
+    <td>( 14 )</td>
+    </tr>
+
+  </tfoot>
+</table>
+
+
+
+
+
+
+
+
+<table border=3>
+  <caption>Ejemplo de tabla</caption>
+  <thead>
+    <tr>
+      <th colspan=4>puntos de funcion sin ajustar</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan =2 >Descripcion</td>
+      <th colspan=4>Horas por Punto de Función</th>
+    </tr>
+    <tr>
+       <td>Alta</td>
+      <td>Media</td>
+      <td>Baja</td>
+    </tr>
+    <tr>
+      <td>Entradas ( EI )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+     <tr>
+      <td>Salidas ( EO )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+     <tr>
+      <td>Consultas ( EQ )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+    <tr>
+      <td>Archivos ( ILF )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+    <tr>
+      <td>Interfaces de Programa ( EIF )</td>
+      <td>Buenos Aires</td>
+      <td>Peso</td>
+      <td>Peso</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=4>TOTAL HORAS</th>
+<tr>
+    <th colspan=3>Esfuerzo Horas / Persona</th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=3>Duración de Proyecto (h)a </th>
+    <td>( 14 )</td>
+    </tr>
+<tr>
+    <th colspan=3>Duración de Proyecto en Meses</th>
+    <td>( 14 )</td>
+    </tr>
+      
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>   
