@@ -13,31 +13,11 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
-  'jenssegers/mongodb' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',
-      1 => 'Jenssegers\\Mongodb\\MongodbQueueServiceProvider',
-    ),
-  ),
   'laravel/tinker' => 
   array (
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'laravelcollective/html' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Collective\\Html\\HtmlServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Form' => 'Collective\\Html\\FormFacade',
-      'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
   'nesbot/carbon' => 
